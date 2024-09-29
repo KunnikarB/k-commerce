@@ -154,7 +154,7 @@ body {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #a0e7e5;
   font-size: 1rem;
@@ -170,7 +170,6 @@ footer {
 
     & span:hover {
       color: #dd4c93;
-      
     }
   }
 
@@ -183,7 +182,7 @@ footer {
     }
 
     & a:hover {
-      color: #dd4c93;   
-  }
+      color: #dd4c93;
+    }
   }
 }
