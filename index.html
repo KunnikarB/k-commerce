@@ -7,8 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" href="Styles/products.css">
   <title>K-Commerce</title>
-  <style>
+  <!-- <style>
     body {
       font-family: "Lilita One", sans-serif;
       background-color: #ffaebc;
@@ -208,123 +210,193 @@
       margin-right: 0.5rem;
     }
 
-  </style>
+  </style> -->
 </head>
 <body>
-  <header>
-    <div>
-      <img src="images/k-commerceLogo.png" alt="k-commerce logo">
-    </div>
+  <!-- Header Section -->
+  <header class="header">
+   
+      <a href="./index.html">
+      <img class="logo" src="images/k-commerceLogo.png" alt="k-commerce logo"></a>
+    
+
     
     <nav>
-      <ul>
-        <li><a href="#">Home <i class="fa-solid fa-house-chimney-window"></i> </a></li>
-        <li><a href="#">Shop <i class="fa-solid fa-basket-shopping"></i></a></li>
-        <li><a href="#">Contact <i class="fa-solid fa-envelope"></i> </a></li>
+      <ul class="navigation">
+        <li class="navigation__link">
+          <a href="#">Home 
+            <i class="fa-solid fa-house-chimney-window"></i> 
+          </a>
+        </li>
+
+        <li class="navigation__link">
+          <a href="#">Elextronics 
+            <i class="fa-solid fa-computer"></i>
+          </a>
+        </li>
+
+        <li class="navigation__link">
+          <a href="#">Fashion 
+            <i class="fa-solid fa-tshirt"></i> 
+          </a>
+        </li>
+
+        <li class="navigation__link">
+          <a href="#">Contact 
+            <i class="fa-solid fa-envelope"></i>
+         </a>
+        </li>
       </ul>
     </nav>
-
-    <div>
-      <form>
+  
+    <div class="header-right">
+      <form class="form">
         <input type="text" placeholder="Search...">
         <button>Search</button>
       </form>
-        
+    
+      <div class="icon--cart">
         <a href="#">
-          <i class="fa-solid fa-cart-shopping fa-2x"><span>0</span></i>
+          <i class="fa-solid fa-cart-shopping fa-2x">
+            <span class="icon--cart-quantity">0</span>
+          </i>
         </a> 
-        <a href="#"><i class="fa-solid fa-bars fa-2x hamburger"></i></a>
-    </div>
-    
+      </div>
 
-    
+      <div class="icon--hamburger">
+        <a href="#">
+          <i class="fa-solid fa-bars fa-2x hamburger"></i>
+        </a>
+      </div>
+  </div>
+
   </header>
+<!-- End Of Header -->
 
-  <main>
-    <section>
-      <h1>Welcome to K-Commerce 🛍️</h1>
-      <h2>All the latest picked from designer of our store</h2>
-      <div>
-      <h3>All the products</h3>
-      <div>
-      <label for="filter">Sort by price:</label>
-        <select>
-          <option value="ascending">Ascending</option>
-          <option value="descending">Descending</option>
-        </select>
-      </div>
-      </div>
+<!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero__header">Welcome to K-Commerce 🛍️</h1>
+      <h2 class="hero__content">All the latest picked from designer of our store</h2>
+      <div class="hero__sidebar">
+        <h3>All the products</h3>
       
-      <ul>
+        <div class="sort">
+          <label class="sort__label" for="filter">Sort by price:</label>
+            <select class="sort__select">
+              <option class="sort__select-option" value="ascending">Ascending</option>
+              <option class="sort__select-option" value="descending">Descending</option>
+            </select>
+        </div>
+    </div>
+   </section> 
+  
+<!-- End Of Hero Section -->
+
+<!-- Product Section -->
+    <section class="products"> 
+      <ul class="products--list">
         <li>
-          <img src="images/woman-01.jpg" alt="summer party dress">
-          <h4>PARTY DRESS</h4>
-          <p>Summer Party Dress Relaxing style</p>
-          <p>Price: $120</p>
-          <button>Add to cart</button>
+          <div class="product card">
+            <img class="product--img" src="images/woman-01.jpg" alt="summer party dress">
+            <h4 class="product--name">PARTY DRESS</h4>
+            <p class="product--description">Summer Party Dress Relaxing style</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $120</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
         </li>
 
         <li>
-          <img src="images/woman-02.jpg" alt="summer party maxi dress">
-          <h4>MAXI DRESS</h4>
-          <p>Fancy Summer Party Maxi Dress</p>
-          <p>Price: $150</p>
-          <button>Add to cart</button>
+          <div class="product card">
+            <img class="product--img" src="images/woman-02.jpg" alt="summer party maxi dress">
+            <h4 class="product--name">MAXI DRESS</h4>
+            <p class="product--description">Fancy Summer Party Maxi Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $150</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
         </li>
 
          <li>
-          <img src="images/woman-03.jpg" alt="Wedding dress">
-          <h4>WEDDING DRESS</h4>
-          <p>Luxury Wedding Dress</p>
-          <p>Price: $850</p>
-          <button>Add to cart</button>
+          <div class="product card">
+            <img class="product--img" src="images/woman-03.jpg" alt="Wedding dress">
+            <h4 class="product--name">WEDDING DRESS</h4>
+            <p class="product--description">Luxury Wedding Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $850</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
         </li>
 
          <li>
-          <img src="images/woman-04.jpg" alt="Work dress">
-          <h4>WORK DRESS</h4>
-          <p>Very Cute Summer Work Dress</p>
-          <p>Price: $120</p>
-          <button>Add to cart</button>
+          <div class="product card">
+            <img class="product--img" src="images/woman-04.jpg" alt="Work dress">
+            <h4 class="product--name">WORK DRESS</h4>
+            <p class="product--description">Very Cute Summer Work Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $120</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
         </li>
 
          <li>
-          <img src="images/woman-05.jpg" alt="summer party maxi dress">
-          <h4>SPECIAL OCCASION DRESS</h4>
-          <p>Fancy Special Occastion Dress</p>
-          <p>Price: $650</p>
-          <button>Add to cart</button>
-        </li>
+          <div class="product card">
+            <img class="product--img" src="images/woman-05.jpg" alt="summer party maxi dress">
+            <h4 class="product--name">SPECIAL OCCASION DRESS</h4>
+            <p class="product--description">Fancy Special Occastion Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $650</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
+          </li>
 
         <li>
-          <img src="images/woman-06.jpg" alt="summer party maxi dress">
-          <h4>SUMMER DRESS</h4>
-          <p>Fancy Sumer Dress</p>
-          <p>Price: $90</p>
-          <button>Add to cart</button>
-        </li>
+          <div class="product card">
+            <img class="product--img" src="images/woman-06.jpg" alt="summer party maxi dress">
+            <h4 class="product--name">SUMMER DRESS</h4>
+            <p class="product--description">Fancy Sumer Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $90</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
+          </li>
 
         <li>
-          <img src="images/woman-07.jpg" alt="summer party maxi dress">
-          <h4>VINTAGE DRESS</h4>
-          <p>Preloved luxury Vintage Dress</p>
-          <p>Price: $80</p>
-          <button>Add to cart</button>
-        </li>
+          <div class="product card">
+            <img class="product--img" src="images/woman-07.jpg" alt="summer party maxi dress">
+            <h4 class="product--name">VINTAGE DRESS</h4>
+            <p class="product--description">Preloved luxury Vintage Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $80</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
+          </li>
 
         <li>
-          <img src="images/woman-08.jpg" alt="summer party maxi dress">
-          <h4>EVENING DRESS</h4>
-          <p>Fancy luxury Evening Dress</p>
-          <p>Price: $450</p>
-          <button>Add to cart</button>
-        </li>
+          <div class="product card">
+            <img class="product--img" src="images/woman-08.jpg" alt="summer party maxi dress">
+            <h4 class="product--name">EVENING DRESS</h4>
+            <p class="product--description">Fancy luxury Evening Dress</p>
+            <button class="product--details">View Details</button>
+            <p class="product--price">Price: $450</p>
+            <button class="product--add-to-cart-button">Add to cart</button>
+          </div>
+          </li>
       </ul>
     </section>
-  
+    
+  </main>
+
+<!-- End Of Product Section -->
+
+<!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 K-Commerce | All right reserved.</p>
-        <div>
+      <p>&copy; 2024 
+        <a href="./index.html">
+          <span>K-commerce</span>
+        </a> | All right reserved.</p>
+        <div class="icons">
           <a href="mailto:k-vintagebutik@gmail.com"><i class="fa-solid fa-square-envelope fa-2x"></i></a>
           <a href="https://www.instagram.com/kunnikar_b/"><i class="fa-brands fa-instagram fa-2x"></i>
           </a>
