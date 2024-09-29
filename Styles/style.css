@@ -60,13 +60,14 @@ body {
 .header-right {
   display: flex;
   gap: 3rem;
-  
+
   & .form {
     display: flex;
 
     & input {
       padding: 0.5rem;
       border: 1px solid #ffaebc;
+      font-family: inherit;
 
       &::placeholder {
         color: #ffaebc;
@@ -78,10 +79,11 @@ body {
       background-color: #ffaebc;
       color: white;
       border: none;
+      font-family: inherit;
     }
-    
+
     & button:hover {
-      background-color: #ff7eb9;
+      background-color: #dd4c93;
     }
   }
 }
@@ -148,4 +150,40 @@ body {
   }
 }
 
-/* Main */
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a0e7e5;
+  font-size: 1rem;
+  padding: 1rem;
+
+  & p {
+    margin-right: 1rem;
+
+    & span {
+      text-decoration: none;
+      color: #ffaebc;
+    }
+
+    & span:hover {
+      color: #dd4c93;
+      
+    }
+  }
+
+  & .icons {
+    gap: 0.3rem;
+
+    & a {
+      text-decoration: none;
+      color: #ffaebc;
+    }
+
+    & a:hover {
+      color: #dd4c93;   
+  }
+  }
+}
