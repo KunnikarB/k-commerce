@@ -184,5 +184,9 @@ footer {
     & a:hover {
       color: #dd4c93;
     }
+
+    & i {
+      margin-right: 0.5rem;
+    }
   }
 }
