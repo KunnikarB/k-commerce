@@ -165,11 +165,11 @@ footer {
 
     & span {
       text-decoration: none;
-      color: #ffaebc;
+      color: #ffffff;
     }
 
     & span:hover {
-      color: #dd4c93;
+      color: #ffaebc;
     }
   }
 
@@ -178,11 +178,11 @@ footer {
 
     & a {
       text-decoration: none;
-      color: #ffaebc;
+      color: #ffffff;
     }
 
     & a:hover {
-      color: #dd4c93;
+      color: #ffaebc;
     }
 
     & i {
