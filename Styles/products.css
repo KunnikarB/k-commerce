@@ -38,6 +38,17 @@ ul {
   margin: 0 auto;
 }
 
+.clothing--hero {
+  background-image: url(../images/hero-2.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 240px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
 
 .container {
   padding: 1rem;
