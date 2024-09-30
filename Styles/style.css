@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #a0e7e5;
+  background-color: #dd4c93;
   padding: 3rem;
 }
 
@@ -156,7 +156,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #a0e7e5;
+  background-color: #dd4c93;
   font-size: 1rem;
   padding: 1rem;
 
@@ -190,3 +190,4 @@ footer {
     }
   }
 }
+
