@@ -109,10 +109,10 @@
       <h3>All the products</h3>
     
       <div class="sort">
-        <label class="sort__label" for="filter">Sort by price:</label>
-          <select class="sort__select">
-            <option class="sort__select-option" value="ascending">Ascending</option>
-            <option class="sort__select-option" value="descending">Descending</option>
+        <label class="sort__label" for="filter">Sort by:</label>
+          <select class="sort__select" id="sort-clothing">
+            <option class="sort__select-option" value="price-asc">Price: Low to High</option>
+            <option class="sort__select-option" value="price-desc">Price: High to Low</option>
           </select>
       </div>
   </div>
@@ -122,7 +122,7 @@
 
 <!-- Product Section -->
     <section class="products"> 
-      <div class="products--list js-products--list">
+      <div class="products--list js-products--list" id="clothing-products">
           <!-- <div class="product">
             <div class="product--overlay">
               <img class="product--img" src="images/woman-01.jpg" alt="summer party dress">
