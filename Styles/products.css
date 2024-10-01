@@ -32,7 +32,6 @@ ul {
   list-style-type: none;
 }
 
-
 /* Hero Section */
 
 .electronics--hero {
@@ -57,7 +56,8 @@ ul {
   transition: all 2s ease;
 }
 
-.electronics--hero:hover, .clothing--hero:hover {
+.electronics--hero:hover,
+.clothing--hero:hover {
   transform: scale(1.1);
 }
 
@@ -69,38 +69,46 @@ ul {
 .hero {
   & .hero__header {
     font-size: 2rem;
-    margin: 1.5rem;
+    margin: 3rem;
   }
 
   & .hero__content {
     display: inline-block;
-    padding: 2rem;
     border-radius: 15px;
-    margin-top: 3rem;
+    margin: 3rem;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   & .hero__sidebar {
     display: flex;
     justify-content: space-between;
-    margin: 0 5rem;
-    
+    margin: 5rem;
+
     & h3 {
       font-size: 1.5rem;
-      
     }
 
     & .sort {
       display: flex;
       align-items: first baseline;
       gap: 1rem;
-      
 
       & .sort__label {
-        font-size: 1.5rem;  
+        font-size: 1.5rem;
       }
 
       & .sort__select {
-        background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+        background: linear-gradient(
+          90deg,
+          rgb(252, 115, 156) 0%,
+          rgb(139, 102, 241) 100%
+        );
         color: var(--text-color);
         border: none;
         padding: 1rem;
@@ -114,51 +122,51 @@ ul {
 
 /* Category Section */
 .section {
-  padding: 5rem 0;
+  padding: 1rem 0;
   overflow: hidden;
 
   & .cat-center {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 114rem;
+    max-width: 120rem;
     margin: auto;
     padding: 0 3rem;
     margin-right: 3rem;
 
     & .cat {
-      max-width: 37rem;
-      height: 25rem;
+      max-width: 35rem;
+      height: 30rem;
       overflow: hidden;
       position: relative;
       cursor: pointer;
       text-align: center;
       margin-left: 1rem;
 
-    & img {
-      width: 36.5rem;
-      height: 100%;
-      margin: auto;
-      object-fit: cover;
-      transition: all 2s ease;
-    }
+      & img {
+        width: 36.5rem;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        transition: all 2s ease;
+      }
 
-    & div {
-      position: absolute;
-      bottom: 1%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 12rem;
-      height: 3rem;
-      line-height: 3rem;
-      text-align: center;
-      font-size: 1.2rem;
-      border-radius: 50px;
-      font-weight: 500;
-      background-color: rgba(221, 76, 147, 0.8);
+      & div {
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        background-color: rgba(221, 76, 147, 0.8);
+      }
     }
   }
-}
 }
 
 .cat-center .cat:hover img {
@@ -166,7 +174,6 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-
   .section {
     padding: 2rem 0;
 
@@ -184,14 +191,14 @@ ul {
           line-height: 3rem;
           font-size: 1.2rem;
         }
-      }   
+      }
     }
   }
 }
 
 /* PRODUCTS LIST */
 .products {
-  margin:  4rem;
+  margin: 4rem;
 }
 
 .products--list {
@@ -204,7 +211,6 @@ ul {
   row-gap: 1rem;
   margin-top: 130px;
 }
-
 
 /* PRODUCT */
 .product {
@@ -227,7 +233,8 @@ ul {
   font-size: 18px;
 }
 
-.product--price, .product--name {
+.product--price,
+.product--name {
   margin: 18px;
 }
 
@@ -268,7 +275,11 @@ ul {
 }
 
 .product--add-to-cart-button {
-  background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
   border: none;
   color: var(--text-color);
   padding: 10px 20px;
@@ -283,7 +294,6 @@ ul {
   cursor: pointer;
 }
 
-
 /* CARD */
 .card {
   padding: 20px;
@@ -297,11 +307,9 @@ ul {
   transform: scale(1.05);
 }
 
-
 /* Products Responsive */
 
 @media (max-width: 768px) {
-
   .hero {
     & .hero__header {
       font-size: 1.5rem;
@@ -354,5 +362,3 @@ ul {
     width: 100%;
   }
 }
-
-
