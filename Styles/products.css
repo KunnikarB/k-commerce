@@ -287,6 +287,23 @@ ul {
   font-size: 1rem;
 }
 
+.product--quantity {
+  margin-top: 20px;
+}
+
+.product--quantity label {
+  color: var(--primary-color);
+}
+
+.product--quantity select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  color: var(--hover-color);
+}
+
 /* Cart button */
 .product--add-to-cart-button {
   background: linear-gradient(

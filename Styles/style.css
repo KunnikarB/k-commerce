@@ -135,13 +135,14 @@ body {
 
   & i span {
     position: absolute;
-    top: -15px;
-    right: -10px;
+    top: -25px;
+    right: -18px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 50%;
-    padding: 0.2rem;
-    font-size: 0.7rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--primary-color);
   }
 }
 
