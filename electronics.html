@@ -109,14 +109,14 @@
       
     <div class="hero__sidebar">
       <h3>All the products</h3>
-      <div class="sort" id="js-sort">
+      <div class="sort" >
         <label class="sort__label" for="filter">Sort by:</label>
-          <select class="sort__select" id="js-sort-electronics">
+          <select class="sort__select" id="sort-electronics">
             <option class="sort__select-option" value="price-asc">Price: Low to High</option>
             <option class="sort__select-option" value="price-desc">Price: High to Low</option>
           </select>
       </div>
-      <div id="electronics-products"></div>
+      <div ></div>
   </div>
   </section> 
   
@@ -124,7 +124,7 @@
 
 <!-- Product Section -->
     <section class="products "> 
-      <div class="products--list js-products--list">
+      <div class="products--list js-products--list" id="electronics-products">
         
           <!-- <div class="product">
             <div class="product--overlay">
@@ -242,7 +242,8 @@
 <!-- End Of Footer Section -->
   
 <!-- Scripts -->
-    <script src="Scripts/script.js"></script>
-    <script type="module" src="Scripts/electronics.js"></script>
+  
+  <script src="Scripts/script.js"></script>
+  <script type="module" src="Scripts/electronics.js"></script>
 </body>
 </html>
