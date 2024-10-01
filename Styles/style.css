@@ -17,6 +17,19 @@ body {
   color: var(--text-color);
 }
 
+.dark-mode {
+  background-color: #000;
+}
+
+.darkmode-button{
+  background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
+  color: var(--text-color);
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 50px;
+}
 /* Header */
 .header {
   display: flex;
