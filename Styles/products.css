@@ -100,7 +100,7 @@ ul {
       }
 
       & .sort__select {
-        background-color:  rgba(221, 76, 147, 0.8);
+        background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
         color: var(--text-color);
         border: none;
         padding: 1rem;
