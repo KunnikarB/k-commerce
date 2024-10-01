@@ -68,15 +68,15 @@ function showMessage(productId) {
 }
 
 // Add to cart button
-document.querySelectorAll('.js-add-to-cart').forEach((button) => {
-  button.addEventListener('click', () => {
-    const { productId } = button.dataset;
+// document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const { productId } = button.dataset;
 
-    addToCart(productId);
-    updateCartQuantity();
-    showMessage(productId);
-  });
-});
+//     addToCart(productId);
+//     updateCartQuantity();
+//     showMessage(productId);
+//   });
+// });
 
 
 // Function to display products
@@ -123,6 +123,17 @@ function displayElectronics(products) {
         `;
     productsContainer.appendChild(productDiv);
   });
+
+  document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const { productId } = button.dataset;
+
+    addToCart(productId);
+    updateCartQuantity();
+    showMessage(productId);
+  });
+});
+
 }
 
 // Sort products based on selection
