@@ -80,7 +80,7 @@
     <h1 class="hero__header">Electronics  🍎</h1>
     <section class="electronics--hero"></section>
 
-      <h2 class="hero__content">All the latest picked from of our store, buy mac 💻 or iPad 📱 with education savings 💰</h2>
+      <h2 class="hero__content">All the latest picked from of our store, buy mac or iPad with education savings</h2>
 
 <!-- Categories Section -->
     <section class="section">
@@ -109,14 +109,14 @@
       
     <div class="hero__sidebar">
       <h3>All the products</h3>
-    
-      <div class="sort" id="sort">
+      <div class="sort" id="js-sort">
         <label class="sort__label" for="filter">Sort by:</label>
-          <select class="sort__select">
-            <option class="sort__select-option" value="ascending">Price: Low to High</option>
-            <option class="sort__select-option" value="descending">Price: High to Low</option>
+          <select class="sort__select" id="js-sort-electronics">
+            <option class="sort__select-option" value="price-asc">Price: Low to High</option>
+            <option class="sort__select-option" value="price-desc">Price: High to Low</option>
           </select>
       </div>
+      <div id="electronics-products"></div>
   </div>
   </section> 
   
@@ -244,5 +244,6 @@
 <!-- End Of Footer Section -->
   
     <script src="Scripts/script.js"></script>
+    <script type="module" src="Scripts/electronics.js"></script>
 </body>
 </html>
