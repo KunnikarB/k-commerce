@@ -287,6 +287,7 @@ ul {
   font-size: 1rem;
 }
 
+/* Cart button */
 .product--add-to-cart-button {
   background: linear-gradient(
     90deg,
@@ -306,6 +307,27 @@ ul {
   border-radius: 50px;
   cursor: pointer;
 }
+
+.added-to-cart {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color);
+  opacity: 0;
+}
+
+.added-to-cart img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.added-to-cart-visible {
+  opacity: 1;
+}
+
 
 /* CARD */
 .card {

@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: 6,
-    image: './images/electronic-06.jpg',
+    image: './images/electronic-06.png',
     name: 'HomePod',
     des: 'Immersive, high-fidelity audio',
     price: 299,
@@ -49,7 +49,7 @@ export const products = [
   },
   {
     id: 7,
-    image: './images/electronic-07.jpg',
+    image: './images/electronic-07.png',
     name: 'HomePod Mini',
     des: 'Surprising sound for its size',
     price: 99,
@@ -57,7 +57,7 @@ export const products = [
   },
   {
     id: 8,
-    image: './images/electronic-08.jpg',
+    image: './images/electronic-08.png',
     name: 'Vission Pro',
     des: 'The ultimate theater wherever you are',
     price: 3499,

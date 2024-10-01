@@ -1,18 +1,28 @@
-// Sort products based on selection
-document
-  .getElementById('js-sort-electronics')
-  .addEventListener('change', function () {
-    const sortValue = this.value;
-    let sortedProducts;
+import {products} from '../data/electronics-products.js';
 
-    if (sortValue === 'price-asc') {
-      sortedProducts = electronics.sort((a, b) => a.price - b.price);
-    } else if (sortValue === 'price-desc') {
-      sortedProducts = electronics.sort((a, b) => b.price - a.price);
-    }
+let productsContainer = '';
 
-    displayElectronics(sortedProducts);
-  });
+products.forEach((product) => {
+  productsContainer += `<div class="product">
+            <div class="product--overlay">
+              <img class="product--img" src="${product.image}" alt="MacBook">
+              <span class="product--discount">${product.discount}</span>
+            </div>
+            <h4 class="product--name">${product.name}</h4>
+            <p class="product--description">${product.des}</p>
+            <p class="product--price">Price: $${product.price}</p>
 
-  // Display products on page load
-displayElectronics(electronics);
+            <div class ="added-to-cart js-added-to-cart-${product.id}" >
+              <img src="./images/checkmark.png" alt="checked">
+              <p>Added to cart</p>
+            </div>
+
+            <button class="product--add-to-cart-button card" data-product-id = ${product.id} >Add to cart</button>
+            
+          </div>`;
+});
+
+// Add products to the DOM 
+document.querySelector('.js-products--list').innerHTML = productsContainer;
+
+
