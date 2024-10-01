@@ -224,7 +224,6 @@ footer {
     gap: 0.3rem;
 
     & a {
-      text-decoration: none;
       color: var(--text-color);
     }
 
