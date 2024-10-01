@@ -4,10 +4,17 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #dd4c93;
+  --secondary-color: #ffaebc;
+  --hover-color: #866bac;
+  --text-color: #ffffff;
+}
+
 body {
   font-family: 'Lilita One', sans-serif;
-  background-color: #ffaebc;
-  color: #ffffff;
+   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 /* Header */
@@ -15,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #dd4c93;
+  background-color: var(--primary-color); 
   padding: 3rem;
 }
 
@@ -39,15 +46,15 @@ body {
 
     & a {
       text-decoration: none;
-      color: #ffffff;
+      color: var(--text-color);
     }
 
     & a:hover {
-      color: #ffaebc;
+      color: var(--hover-color);
     }
 
     & a i {
-      color: #ffaebc;
+      color: var(--secondary-color);
       font-size: 1rem;
       position: absolute;
       top: -4px;
@@ -66,24 +73,25 @@ body {
 
     & input {
       padding: 0.5rem;
-      border: 1px solid #ffaebc;
+      border: 1px solid var(--secondary-color);
       font-family: inherit;
 
       &::placeholder {
-        color: #ffaebc;
+        color: var(--secondary-color);
       }
     }
 
     & button {
       padding: 0.5rem;
-      background-color: #ffaebc;
-      color: white;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
       border: none;
       font-family: inherit;
-    }
+      cursor: pointer;
+    } 
 
     & button:hover {
-      background-color: #dd4c93;
+      background-color: var(--hover-color);
     }
   }
 }
@@ -98,12 +106,17 @@ body {
     position: relative;
   }
 
+  & i:hover {
+    color: var(--hover-color);
+  }
+
+
   & i span {
     position: absolute;
     top: -15px;
     right: -10px;
-    background-color: #ffaebc;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     border-radius: 50%;
     padding: 0.2rem;
     font-size: 0.7rem;
@@ -116,12 +129,12 @@ body {
   cursor: pointer;
 
   & i {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 2rem;
   }
 
   & i:hover {
-    color: #ffaebc;
+    color: var(--hover-color);
   }
 }
 
@@ -169,7 +182,8 @@ footer {
     }
 
     & span:hover {
-      color: #ffaebc;
+      color: var(--hover-color);
+      font-size: 18px;
     }
   }
 
@@ -178,11 +192,11 @@ footer {
 
     & a {
       text-decoration: none;
-      color: #ffffff;
+      color: var(--text-color);
     }
 
     & a:hover {
-      color: #ffaebc;
+      color: var(--hover-color);
     }
 
     & i {
