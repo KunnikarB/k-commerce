@@ -5,7 +5,7 @@ export const products = [
     name: 'MacBook Pro 14"',
     des: 'The most advanced Mac laptops',
     price: 1599,
-    discount: 0,
+    discount: "40%",
   },
   {
     id: 2,
