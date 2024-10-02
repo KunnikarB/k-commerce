@@ -106,7 +106,13 @@
     <!-- End Of Categories Section -->
       
     <div class="hero__sidebar">
-      <h3>All the products</h3>
+      <div class="search" >
+        <h3>All the products</h3>
+        <form >
+          <i class="fa-solid fa-search"></i>
+          <input type="text" id="search-item" placeholder="Search products">
+        </form>
+     </div>
     
       <div class="sort">
         <label class="sort__label" for="filter">Sort by:</label>
@@ -121,7 +127,7 @@
 <!-- End Of Hero Section -->
 
 <!-- Product Section -->
-    <section class="products"> 
+    <section class="products" id="products-list"> 
       <div class="products--list js-products--list" id="clothing-products">
           <!-- <div class="product">
             <div class="product--overlay">

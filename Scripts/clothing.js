@@ -133,6 +133,28 @@ function displayClothing(products) {
 
 }
 
+// Display products on page load
+displayClothing(products);
+
+
+
+// Search products
+function searchProducts() {
+  const searchInput = document.getElementById('search-item').value.toLowerCase();
+  
+  // Filter products based on search input
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(searchInput)
+  );
+  
+  // Display filtered products
+  displayClothing(filteredProducts);
+}
+
+// Event listener for the search input
+document.getElementById('search-item').addEventListener('keyup', searchProducts);
+
+
 // Sort products based on selection
 document
   .getElementById('sort-clothing')
@@ -149,5 +171,3 @@ document
     displayClothing(sortedProducts);
   });
 
-// Display products on page load
-displayClothing(products);

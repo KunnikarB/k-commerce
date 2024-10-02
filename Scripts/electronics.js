@@ -2,7 +2,6 @@ import { cart, addToCart } from '../data/cart.js';
 
 import { products } from '../data/electronics-products.js';
 
-
 let productsContainer = '';
 
 products.forEach((product) => {
@@ -41,7 +40,6 @@ products.forEach((product) => {
           </div>`;
 });
 
-
 // Add products to the DOM
 document.querySelector('.js-products--list').innerHTML = productsContainer;
 
@@ -77,7 +75,6 @@ function showMessage(productId) {
 //     showMessage(productId);
 //   });
 // });
-
 
 // Function to display products
 function displayElectronics(products) {
@@ -125,16 +122,37 @@ function displayElectronics(products) {
   });
 
   document.querySelectorAll('.js-add-to-cart').forEach((button) => {
-  button.addEventListener('click', () => {
-    const { productId } = button.dataset;
+    button.addEventListener('click', () => {
+      const { productId } = button.dataset;
 
-    addToCart(productId);
-    updateCartQuantity();
-    showMessage(productId);
+      addToCart(productId);
+      updateCartQuantity();
+      showMessage(productId);
+      displaySearchProducts(products);
+    });
   });
-});
-
 }
+
+// Display products on page load
+ displayElectronics(products);
+
+
+ // Search products
+function searchProducts() {
+  const searchInput = document.getElementById('search-item').value.toLowerCase();
+  
+  // Filter products based on search input
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(searchInput)
+  );
+  
+  // Display filtered products
+  displayElectronics(filteredProducts);
+}
+
+// Event listener for the search input
+document.getElementById('search-item').addEventListener('keyup', searchProducts);
+
 
 // Sort products based on selection
 document
@@ -152,8 +170,6 @@ document
     displayElectronics(sortedProducts);
   });
 
-// Display products on page load
-displayElectronics(products);
 
 
 
