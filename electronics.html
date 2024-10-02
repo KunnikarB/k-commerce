@@ -49,10 +49,7 @@
     </nav>
   
     <div class="header-right">
-      <form class="form">
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-      </form>
+      
     
       <div class="icon--cart">
         <a href="#">
@@ -78,6 +75,7 @@
 
     <section class="hero">
     <h1 class="hero__header">Electronics  🍎</h1>
+
     <section class="electronics--hero"></section>
 
       <h2 class="hero__content">All the latest picked from of our store, buy mac or iPad with education savings</h2>
@@ -85,6 +83,7 @@
 <!-- Categories Section -->
     <section class="section">
       <div class="cat-center">
+        
         <div class="cat">
           <img src="./images/Mac.png" alt="laptop" />
           <div>
@@ -108,7 +107,14 @@
     <!-- End Of Categories Section -->
       
     <div class="hero__sidebar">
-      <h3>All the products</h3>
+     <div class="search" >
+        <h3>All the products</h3>
+        <form >
+          <i class="fa-solid fa-search"></i>
+          <input type="text" id="search-item" placeholder="Search products">
+        </form>
+     </div>
+
       <div class="sort" >
         <label class="sort__label" for="filter">Sort by:</label>
           <select class="sort__select" id="sort-electronics">
@@ -123,10 +129,10 @@
 <!-- End Of Hero Section -->
 
 <!-- Product Section -->
-    <section class="products "> 
+    <section class="products" id="products-list"> 
       <div class="products--list js-products--list" id="electronics-products">
-        
-          <!-- <div class="product">
+<!--         
+          <div class="product">
             <div class="product--overlay">
               <img class="product--img" src="images/electronic-01.jpg" alt="MacBook">
               <span class="product--discount">40%</span>
@@ -218,7 +224,7 @@
             <p class="product--description">The ultimate theater wherever you are</p>
             <p class="product--price">Price: $3944</p>
             <button class="product--add-to-cart-button card">Add to cart</button>
-          </div>  -->
+          </div>   -->
       </div>
     </section>    
   </main>
@@ -242,7 +248,7 @@
 <!-- End Of Footer Section -->
   
 <!-- Scripts -->
-  
+  <script src="Scripts/search.js"></script>
   <script src="Scripts/script.js"></script>
   <script type="module" src="Scripts/electronics.js"></script>
 </body>
