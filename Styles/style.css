@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 :root {
   --primary-color: #dd4c93;
   --secondary-color: #ffaebc;
@@ -52,7 +56,6 @@ body {
   
 }
 
-
 /* Navigation Middle Section*/
 .navigation {
   display: flex;
@@ -66,7 +69,6 @@ body {
     position: relative;
 
     & a {
-      text-decoration: none;
       color: var(--text-color);
     }
 
@@ -119,7 +121,6 @@ body {
 
 /* Cart Quantity Icon */
 .icon--cart {
-  text-decoration: none;
   margin-right: 3rem;
 
   & i {
@@ -134,13 +135,14 @@ body {
 
   & i span {
     position: absolute;
-    top: -15px;
-    right: -10px;
+    top: -25px;
+    right: -18px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 50%;
-    padding: 0.2rem;
-    font-size: 0.7rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--primary-color);
   }
 }
 
@@ -184,27 +186,38 @@ body {
   }
 }
 
+hr {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+}
+
 /* Footer */
 
 footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  background-color: #dd4c93;
+  gap: 1rem;
   font-size: 1rem;
   padding: 1rem;
-
+  margin-top: 6%;
+  
+  
   & p {
     margin-right: 1rem;
 
     & span {
-      text-decoration: none;
-      color: #ffffff;
+      background: linear-gradient(90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
 
     & span:hover {
-      color: var(--hover-color);
       font-size: 18px;
+      
     }
   }
 
@@ -212,7 +225,6 @@ footer {
     gap: 0.3rem;
 
     & a {
-      text-decoration: none;
       color: var(--text-color);
     }
 
