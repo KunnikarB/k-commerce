@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #dd4c93;
+  --secondary-color: #ffaebc;
+  --hover-color: #866bac;
+  --text-color: #ffffff;
+}
+
+a,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Login Form */
+.login-form {
+  padding: 3rem;
+  max-width: 50rem;
+  margin: 3rem auto;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(217, 29, 136, 0.1);
+  text-align: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h1 {
+  background: linear-gradient(
+      90deg,
+      rgb(252, 115, 156) 0%,
+      rgb(139, 102, 241) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  font-size: 8rem;
+}
+.login-form form p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-form form label {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.login-form form input {
+  border: 1px solid var(--hover-color);
+  outline: none;
+  padding: 1.5rem 0;
+  text-indent: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.login-form form input::placeholder {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+.login-form form .buttons {
+  margin-top: 1rem;
+}
+
+.login-form form button {
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  margin-right: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
+  color: var(--text-color);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.login-form form p a {
+  color: var(--hover-color);
+}
