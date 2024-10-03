@@ -56,6 +56,20 @@ ul {
   background: var(--primary-color); 
 }
 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: var(--text-color);
+}
+
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%);
+  width: 0%;
+}
+
 /* Hero Section */
 
 .electronics--hero {
@@ -86,8 +100,11 @@ ul {
 }
 
 .container {
-  padding: 1rem;
+  padding: 300px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
   text-align: center;
+
 }
 
 .hero {
