@@ -76,6 +76,7 @@ body {
   top: 0;
   z-index: 1;
   width: 100%;
+  height: auto;
   background-color: var(--primary-color);
 }
 
@@ -409,7 +410,9 @@ main {
 }
 
 @media only screen and (max-width: 567px) {
-  
+  .header .logo {
+    display: none;
+  }
   .contact {
     padding: 8rem 1rem;
 
