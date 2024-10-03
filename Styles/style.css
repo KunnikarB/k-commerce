@@ -258,6 +258,9 @@ body {
 }
 
 /* Main */
+main {
+  margin-top: 10%;
+}
 
 /* Contact */
 .contact {
@@ -314,10 +317,12 @@ body {
     padding: 1rem 2rem;
     width: 50%;
     margin: 0 auto;
+    transition: transform 0.2s;
   }
 
   & .btn-1:hover {
     background: var(--primary-color);
+    transform: scale(1.1);
   }
 
   & form {
@@ -376,10 +381,12 @@ body {
     margin: 0.5rem;
     padding: 1rem 3rem;
     border-radius: 1rem;
+    transition: transform 0.2s;
   }
 
   & form div input[type='submit']:hover {
     background: var(--primary-color);
+    transform: scale(1.1);
   }
 }
 
@@ -402,6 +409,7 @@ body {
 }
 
 @media only screen and (max-width: 567px) {
+  
   .contact {
     padding: 8rem 1rem;
 
@@ -412,9 +420,7 @@ body {
     & .row .col p {
       font-size: 1rem;
       text-align: center;
-    }
-
-   
+    } 
   }
 }
 
@@ -446,10 +452,11 @@ footer {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      transition: transform 0.2s;
     }
 
     & span:hover {
-      font-size: 17px;
+      text-transform: uppercase;
     }
   }
 

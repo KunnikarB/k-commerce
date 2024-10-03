@@ -97,8 +97,45 @@ a:hover {
   color: var(--text-color);
   border-radius: 50px;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-form form button:hover {
+  transform: scale(1.05);
 }
 
 .login-form form p a {
   color: var(--hover-color);
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    padding: 2rem;
+  }
+
+  .login-form h1 {
+    font-size: 6rem;
+  }
+
+  .login-form form p {
+    font-size: 1.5rem;
+  }
+
+  .login-form form label {
+    font-size: 1.4rem;
+  }
+
+  .login-form form input {
+    font-size: 1.4rem;
+  }
+
+  .login-form form input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .login-form form button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
 }
