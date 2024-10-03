@@ -117,15 +117,15 @@
             We aim to respond to all inquiries within 24 hours. Thank you for
             shopping with us!
           </p>
-          <a href="" class="btn btn-1">Contact</a>
+          <a href="" class="btn btn-1">CONTACT</a>
         </div>
 
         <div class="col">
-          <form action="">
-            <div>
-              <label for="name" id="subscribe">SUBSCRIBE AND SAVE!</label>
-              <input type="email" placeholder="Enter your e-mail" />
-              <a id="submit" href="">Send</a>
+          <form action="" name="myForm" onsubmit="return validateForm()">
+            <div >
+              <label for="name" >SUBSCRIBE AND SAVE!</label>
+              <input type="email" placeholder="Enter your e-mail" name="email"/>
+              <input type="submit" value="SUBMIT">
             </div>
           </form>
         </div>
@@ -152,7 +152,7 @@
 <!-- End Of Footer Section -->
   
   
-  <script src="Scripts/darkmode.js"></script>
+  <script src="Scripts/app.js"></script>
   <script type="module" src="Scripts/script.js"></script>
 </body>
 </html>

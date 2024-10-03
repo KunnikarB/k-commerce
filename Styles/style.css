@@ -258,6 +258,12 @@ body {
     padding: 3rem;
   }
 
+  & .row .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
   & .row .col h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -278,7 +284,7 @@ body {
     margin-bottom: 2rem;
     margin-left: 10%;
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: center;
   }
 
   & .btn-1 {
@@ -291,6 +297,8 @@ body {
     display: inline-block;
     border-radius: 1rem;
     padding: 1rem 2rem;
+    width: 50%;
+    margin: 0 auto;
   }
 
   & .btn-1:hover {
@@ -340,10 +348,10 @@ body {
     padding: 2rem;
   }
 
-  & form div a {
+  & form div input[type='submit'] {
     position: absolute;
-    top: 10;
     right: 0;
+    width: 40%;
     background: linear-gradient(
       90deg,
       rgb(252, 115, 156) 0%,
@@ -355,7 +363,7 @@ body {
     border-radius: 1rem;
   }
 
-  & form div a:hover {
+  & form div input[type='submit']:hover {
     background: var(--primary-color);
   }
 }
@@ -381,6 +389,17 @@ body {
 @media only screen and (max-width: 567px) {
   .contact {
     padding: 8rem 1rem;
+
+    & .row .col h2 {
+      font-size: 1.5rem;
+    }
+
+    & .row .col p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+   
   }
 }
 
