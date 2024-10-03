@@ -149,6 +149,7 @@ body {
 
 /* Header Right Section */
 .header-right {
+ 
   display: flex;
   gap: 2rem;
 
@@ -157,14 +158,11 @@ body {
   display: none;
   cursor: pointer;
 
-    & i {
-    color: var(--text-color);
-    font-size: 2rem;
-    }
+  & .xmark {
+    display: none;
+  }
 
-    & i:hover {
-    color: var(--hover-color);
-    }
+
 }
 
 }
@@ -172,6 +170,7 @@ body {
 /* Cart Quantity Icon */
 .icon--cart {
   margin-right: 3rem;
+   
 
   & i {
     color: var(--text-color);
@@ -433,7 +432,7 @@ footer {
   gap: 1rem;
   font-size: 1rem;
   padding: 1rem;
-  margin-top: 6%;
+  margin-top: 1%;
 
   & p {
     margin-right: 1rem;
