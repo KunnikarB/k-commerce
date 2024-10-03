@@ -152,32 +152,21 @@ body {
   display: flex;
   gap: 2rem;
 
-  & .form {
-    display: flex;
+  /* Hamburger Icon menu for small screen */
+  & .hamburger {
+  display: none;
+  cursor: pointer;
 
-    & input {
-      padding: 0.5rem;
-      border: 1px solid var(--secondary-color);
-      font-family: inherit;
-
-      &::placeholder {
-        color: var(--secondary-color);
-      }
+    & i {
+    color: var(--text-color);
+    font-size: 2rem;
     }
 
-    & button {
-      padding: 0.5rem;
-      background-color: var(--secondary-color);
-      color: var(--text-color);
-      border: none;
-      font-family: inherit;
-      cursor: pointer;
+    & i:hover {
+    color: var(--hover-color);
     }
+}
 
-    & button:hover {
-      background-color: var(--hover-color);
-    }
-  }
 }
 
 /* Cart Quantity Icon */
@@ -206,23 +195,9 @@ body {
   }
 }
 
-/* Hamburger Icon menu for small screen */
-.icon--hamburger {
-  display: none;
-  cursor: pointer;
-
-  & i {
-    color: var(--text-color);
-    font-size: 2rem;
-  }
-
-  & i:hover {
-    color: var(--hover-color);
-  }
-}
 
 /* Responsive Header */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
     gap: 1rem;
@@ -232,13 +207,53 @@ body {
     display: flex;
     gap: 1rem;
 
-    & .icon--hamburger {
+    & .hamburger {
       display: block;
     }
   }
 
-  .navigation {
-    display: none;
+  .nav-list {
+    position: relative;
+    top: 12%;
+    left: -35rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--hover-color);
+    height: 100%;
+    width: 0%;
+    max-width: 40rem;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+  }
+
+  .nav-list.open {
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list .nav-item {
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+  }
+
+  .nav-list .nav-item a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+
+  .nav-list .nav-item a:hover {
+    color: var(--primary-color);
+  }
+
+  .nav-list .nav-item a i {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
