@@ -441,6 +441,64 @@ main {
     } 
 }
 
+@media screen and (max-width: 320px) {
+
+  .contact .row{
+    padding: 1rem;
+  }
+
+  .contact .row .col {
+    margin: 0 auto;
+  }
+
+  .contact .row .col p {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact .row .col h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact .row .col a {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+
+
+  .contact .row .col p {
+    font-size: 1.2rem;
+  }
+
+  .contact form div {
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+
+  .contact form div label {
+    font-size: 1rem;
+
+  }
+
+  .contact form div input {
+    padding: 0.5rem 0;
+  }
+  .contact form div input[type='email']::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .contact form div input[type='submit'] {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    position: static;
+    margin: 5% auto;
+  }
+  
+}
+
 hr {
   border: 1px solid var(--primary-color);
   width: 100%;
