@@ -52,8 +52,12 @@
 
 - Added Cart function for add to cart button and Cart Quantity
 
+![added-to-cart](https://github.com/user-attachments/assets/e513016d-9d8f-4005-a1df-dbe95bb989a2)
+
+- Added message
   
-![cart](https://github.com/user-attachments/assets/d0167201-beba-4a36-98f1-255f4570ad72)
+![add-to-cart](https://github.com/user-attachments/assets/9d964938-1a22-468d-a8a3-21367807c564)
+
   
 
   
