@@ -2,8 +2,8 @@ import { cart, addToCart } from '../data/cart.js';
 
 import { products } from '../data/clothing-products.js';
 
+// Generate the products HTML and add to the DOM
 let productsContainer = '';
-
 products.forEach((product) => {
   productsContainer += `<div class="product">
             <div class="product--overlay">
