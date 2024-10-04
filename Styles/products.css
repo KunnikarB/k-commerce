@@ -111,13 +111,13 @@ ul {
 .hero {
   & .hero__header {
     font-size: 2rem;
-    margin: 3rem;
+    margin: 2rem;
   }
 
   & .hero__content {
     display: inline-block;
     border-radius: 15px;
-    margin: 3rem;
+    margin: 2rem;
     font-size: 1.6rem;
     background: linear-gradient(90deg,
     rgb(252, 115, 156) 0%,
@@ -668,15 +668,15 @@ ul {
   
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .hero {
     & .hero__header {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     & .hero__content {
-      font-size: 1.4rem;
-      margin: 10px auto;
+      font-size: 1.2rem;
+      margin: 0 auto;
     }
 
     & .electronics--hero {
@@ -693,13 +693,15 @@ ul {
         width: 50%;
         margin: 0 auto;
         margin-bottom: 1rem;
+        text-align: start;
   }
 
   
       & .search {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: start;
         margin: 0 auto;
         gap: 1rem;
         width: 95%;
@@ -741,3 +743,79 @@ ul {
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    & .hero__header {
+      font-size: 2rem;
+    }
+
+    & .hero__content {
+      font-size: 1.4rem;
+      margin: 0 auto;
+    }
+
+    & .electronics--hero {
+      margin: 0 auto;
+      padding: 150px;
+    }
+
+    & .hero__sidebar {
+      flex-direction: column;
+      margin: 1rem;
+
+      & h3 {
+        font-size: 1.5rem;
+        width: 50%;
+        margin: 0 auto;
+        text-align: start;
+  }
+
+  
+      & .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        margin: 0 auto;
+        width: 100%;
+
+        & h3 {
+          font-size: 1.5rem;
+          width: 100%;
+        }
+
+        & form {
+          padding: 0.8rem;
+          font-size: 0.8rem;
+        }
+
+        & input {
+          padding: 0.5rem;
+          font-size: 1rem;
+          width: 80%;
+          
+        }
+      }
+
+      & .sort {
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+        gap: 1rem;
+        width: 100%;
+
+        & .sort__label {
+          font-size: 1.5rem;
+        }
+
+        & .sort__select {
+          padding: 1rem;
+          font-size: 1rem;
+      
+        }
+      }
+    }
+  }
+} 
