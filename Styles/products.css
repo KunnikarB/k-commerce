@@ -102,8 +102,8 @@ ul {
 }
 
 .container {
-  padding: 300px 0;
-  margin: 50px auto 0 auto;
+  padding: 250px 0;
+  margin: 10px auto 0 auto;
   width: 80%;
   text-align: center;
 }
@@ -111,13 +111,13 @@ ul {
 .hero {
   & .hero__header {
     font-size: 2rem;
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
   & .hero__content {
     display: inline-block;
     border-radius: 15px;
-    margin: 2rem;
+    margin: 1.5rem;
     font-size: 1.6rem;
     background: linear-gradient(90deg,
     rgb(252, 115, 156) 0%,
@@ -253,8 +253,12 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+
+  .container {
+    padding: 150px 0;
+  }
   .section {
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     & .cat-center {
       display: flex;
@@ -265,7 +269,7 @@ ul {
         margin-bottom: 2rem;
 
         & div {
-          width: 100%;
+          width: 50%;
           height: 3rem;
           line-height: 3rem;
           font-size: 1.2rem;
@@ -275,7 +279,16 @@ ul {
   }
 }
 
+@media screen and (max-width: 567px) {
+  .container {
+    padding: 200px 0;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .container {
+    padding: 160px 0;
+  }
   .section {
     padding: 0;
 
