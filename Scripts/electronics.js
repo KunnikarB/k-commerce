@@ -65,16 +65,6 @@ function showMessage(productId) {
   }, 2000);
 }
 
-// Add to cart button
-// document.querySelectorAll('.js-add-to-cart').forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const { productId } = button.dataset;
-
-//     addToCart(productId);
-//     updateCartQuantity();
-//     showMessage(productId);
-//   });
-// });
 
 // Function to display products
 function displayElectronics(products) {
