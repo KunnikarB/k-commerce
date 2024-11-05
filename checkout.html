@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/6c722e42cf.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/checkout/checkout-header.css">
+  <link rel="stylesheet" href="Styles/checkout/checkout.css">
+  <title>Check Out </title>
+</head>
+<body>
+  <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="index.html">
+            <img class="logo" src="images/logo.png">
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section">
+          Checkout (3 items)
+        </div>
+
+        <div class="checkout-header-right-section">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      
+      <div class="page-title">
+        <button class="darkmode-button" onclick="myFunction()">Dark Mode</button>
+        <h1>Review your order 🛍️</h1></div>
+
+      <div class="checkout-grid">
+        <div class="order-summary">
+          <div class="cart-item-container">
+            <div class="delivery-date">
+              Delivery date: Tuesday, June 21
+            </div>
+
+            <div class="cart-item-details-grid">
+              <img class="product-image"
+                src="images/woman-01.jpg">
+
+              <div class="cart-item-details">
+                <div class="product-name">
+                  PARTY DRESS
+                </div>
+                <div class="product-price">
+                  $120
+                </div>
+                <div class="product-quantity">
+                  <span>
+                    Quantity: <span class="quantity-label">2</span>
+                  </span>
+                  <span class="update-quantity-link link-primary">
+                    Update
+                  </span>
+                  <span class="delete-quantity-link link-primary">
+                    Delete
+                  </span>
+                </div>
+              </div>
+
+              <div class="delivery-options">
+                <div class="delivery-options-title">
+                  Choose a delivery option:
+                </div>
+
+                <div class="delivery-option">
+                  <input type="radio" checked
+                    class="delivery-option-input"
+                    name="delivery-option-1">
+                  <div>
+                    <div class="delivery-option-date">
+                      Tuesday, June 21
+                    </div>
+                    <div class="delivery-option-price">
+                      FREE Shipping
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <input type="radio"
+                    class="delivery-option-input"
+                    name="delivery-option-1">
+                  <div>
+                    <div class="delivery-option-date">
+                      Wednesday, June 15
+                    </div>
+                    <div class="delivery-option-price">
+                      $5 - Shipping
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <input type="radio"
+                    class="delivery-option-input"
+                    name="delivery-option-1">
+                  <div>
+                    <div class="delivery-option-date">
+                      Monday, June 13
+                    </div>
+                    <div class="delivery-option-price">
+                      $10 - Shipping
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item-container">
+            <div class="delivery-date">
+              Delivery date: Wednesday, June 15
+            </div>
+
+            <div class="cart-item-details-grid">
+              <img class="product-image"
+                src="images/woman-02.jpg">
+
+              <div class="cart-item-details">
+                <div class="product-name">
+                  MAXI DRESS
+                </div>
+                <div class="product-price">
+                  $150
+                </div>
+                <div class="product-quantity">
+                  <span>
+                    Quantity: <span class="quantity-label">1</span>
+                  </span>
+                  <span class="update-quantity-link link-primary">
+                    Update
+                  </span>
+                  <span class="delete-quantity-link link-primary">
+                    Delete
+                  </span>
+                </div>
+              </div>
+
+              <div class="delivery-options">
+                <div class="delivery-options-title">
+                  Choose a delivery option:
+                </div>
+
+                <div class="delivery-option">
+                  <input type="radio" class="delivery-option-input"
+                    name="delivery-option-2">
+                  <div>
+                    <div class="delivery-option-date">
+                      Tuesday, June 21
+                    </div>
+                    <div class="delivery-option-price">
+                      FREE Shipping
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <input type="radio" checked class="delivery-option-input"
+                    name="delivery-option-2">
+                  <div>
+                    <div class="delivery-option-date">
+                      Wednesday, June 15
+                    </div>
+                    <div class="delivery-option-price">
+                      $5 - Shipping
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-option">
+                  <input type="radio" class="delivery-option-input"
+                    name="delivery-option-2">
+                  <div>
+                    <div class="delivery-option-date">
+                      Monday, June 13
+                    </div>
+                    <div class="delivery-option-price">
+                      $10 - Shipping
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-summary">
+          <div class="payment-summary-title">
+            Order Summary
+          </div>
+
+          <div class="payment-summary-row">
+            <div>Items (3):</div>
+            <div class="payment-summary-money">$270</div>
+          </div>
+
+          <div class="payment-summary-row">
+            <div>Shipping &amp; handling:</div>
+            <div class="payment-summary-money">$5</div>
+          </div>
+
+          <div class="payment-summary-row subtotal-row">
+            <div>Total before tax:</div>
+            <div class="payment-summary-money">$275</div>
+          </div>
+
+          <div class="payment-summary-row">
+            <div>Estimated tax (10%):</div>
+            <div class="payment-summary-money">$27.5</div>
+          </div>
+
+          <div class="payment-summary-row total-row">
+            <div>Order total:</div>
+            <div class="payment-summary-money">$302.50</div>
+          </div>
+
+          <button class="place-order-button button-primary">
+            Place your order
+          </button>
+        </div>
+      </div>
+    </div>
+  <script type="module" src="Scripts/checkout.js"></script>
+  <script src="Scripts/app.js"></script>
+  </body>
+</html>
