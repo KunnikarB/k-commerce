@@ -1,4 +1,4 @@
-# ReDi Milestone E-commerce Project
+# ReDi Milestone E-commerce Project HTML & CSS
 
 # Milestone 1
 
@@ -43,12 +43,23 @@
   
 ![Darkmode](https://github.com/user-attachments/assets/dfd489a2-579c-4be6-8be3-ef314e7f9e38)
 
-# javaScript
+
+
+# ReDi Milestone E-commerce Project javaScript
+
+# Milestone 1: Generating DOM Elements
+
+![Generating Dom ](https://github.com/user-attachments/assets/09f76113-cc22-47e9-baf3-f2ad49c6159b)
+
+
+# Milestone 2: Sorting Products
 
 - Added Search function by product's name and Sort function by price : Low - High, High - Low
   
 
   ![search](https://github.com/user-attachments/assets/5766148f-3a42-4534-ac14-253943b8de99)
+
+# Milestone: Adding Products to the Cart  
 
 - Added Cart function for add to cart button and Cart Quantity
 
